@@ -14,6 +14,7 @@
 * As the salon owner, I need to be able to select a stylist, see their details, and see a list of all clients that belong to that stylist.
 * As the salon owner, I need to add new stylists to our system when they are hired.
 * As the salon owner, I need to be able to add new clients to a specific stylist. I should not be able to add a client if no stylists have been added.
+* As the developer, I need to assign unique IDs of stylist to each client so that I can set up a one-to-many relationship between stylists and clients.
 
 ## Setup/Installation Requirements
 
@@ -25,14 +26,11 @@
   * Enter `$ git clone https://github.com/ayohana/HairSalon.git/`.
 * Create your database.
   * Open the `Command Line Interface` (CLI).
-  * Enter `mysql -uroot -p` and the CLI will prompt for your MYSQL password.
+  * Enter `mysql -uroot -p` and the CLI will prompt for your MySQL password.
   * Enter `CREATE DATABASE database_name;`
-  * Enter `SHOW DATABASES;` to confirm your database was created in your server's list of databases.
   * Enter `USE database_name;` to connect to your database.
-  * Enter `SELECT DATABASE();` to verify you are connected to the correct database.
   * Enter `CREATE TABLE stylists (StylistID serial PRIMARY KEY, Name VARCHAR (255), Specialty VARCHAR (255), HireDate DATETIME);` to create your table of stylists.
   * Enter `CREATE TABLE clients (ClientID serial PRIMARY KEY, Name VARCHAR(255), StylistID INT);` to create your table of clients.
-  * Enter `DESCRIBE stylists;` or `DESCRIBE clients` to see your table columns.
 * Run the application.
   * Navigate into the `HairSalon` directory `$ cd Desktop/HairSalon/HairSalon.Solution/HairSalon`
     * Enter the command `dotnet restore` to gather tools and dependencies for the application.
