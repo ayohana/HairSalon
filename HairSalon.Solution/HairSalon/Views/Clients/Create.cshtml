@@ -1,19 +1,21 @@
 @{
   Layout = "_Layout";
-  ViewBag.Title = "";
+  ViewBag.Title = "Add Client";
 }
 
 @model HairSalon.Models.Client
 
-@* <h4>Add a new task</h4>
+<h1>Add Client</h1>
 @using (Html.BeginForm())
 {
-  @Html.LabelFor(model => model.Description)
-  @Html.TextBoxFor(model => model.Description)
+  @Html.LabelFor(model => model.Name)
+  @Html.TextBoxFor(model => model.Name)
 
-  @Html.LabelFor(model => model.Category)
-  @Html.DropDownList("CategoryId")
+  @Html.LabelFor(model => model.Stylist)
+  @Html.DropDownList("StylistID")
 
-  <input type="submit" value="Add new item" class="btn btn-default" />
+  <input type="submit" value="Add New Client" />
 }
-<p>@Html.ActionLink("Show all items", "Index")</p> *@
+
+<p>@Html.ActionLink("My Stylists", "Index", "Stylists")</p>
+<p>@Html.ActionLink("Back To Home", "Index", "Home")</p>

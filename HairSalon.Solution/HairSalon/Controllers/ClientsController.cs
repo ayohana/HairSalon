@@ -22,19 +22,19 @@ namespace HairSalon.Controllers
     //   return View(model);
     // }
 
-    // public ActionResult Create()
-    // {
-    //   ViewBag.StylistId = new SelectList(_db.ParentClients, "StylistId", "Name");
-    //   return View();
-    // }
+    public ActionResult Create()
+    {
+      ViewBag.StylistID = new SelectList(_db.Stylists, "StylistID", "Name");
+      return View();
+    }
 
-    // [HttpPost]
-    // public ActionResult Create(Item item)
-    // {
-    //   _db.Items.Add(item);
-    //   _db.SaveChanges();
-    //   return RedirectToAction("Index");
-    // }
+    [HttpPost]
+    public ActionResult Create(Client client)
+    {
+      _db.Clients.Add(client);
+      _db.SaveChanges();
+      return RedirectToAction("Details", "Stylists", new { id = client.StylistID });
+    }
 
   }
 }
