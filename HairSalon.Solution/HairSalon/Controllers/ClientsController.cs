@@ -1,30 +1,30 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using ProjectName.Models;
+using HairSalon.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ProjectName.Controllers
+namespace HairSalon.Controllers
 {
-  public class ClassesNameController : Controller
+  public class ClientsController : Controller
   {
-    private readonly ProjectNameContext _db;
+    private readonly HairSalonContext _db;
 
-    public ClassesNameController(ProjectNameContext db)
+    public ClientsController(HairSalonContext db)
     {
       _db = db;
     }
 
     // public ActionResult Index()
     // {
-    //   List<Item> model = _db.ClassesName.Include(classes => classes.ParentClassName).ToList();
+    //   List<Item> model = _db.Clients.Include(classes => classes.Stylist).ToList();
     //   return View(model);
     // }
 
     // public ActionResult Create()
     // {
-    //   ViewBag.ParentClassNameId = new SelectList(_db.ParentClassesName, "ParentClassNameId", "Name");
+    //   ViewBag.StylistId = new SelectList(_db.ParentClients, "StylistId", "Name");
     //   return View();
     // }
 

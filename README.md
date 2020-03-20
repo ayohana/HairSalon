@@ -1,6 +1,6 @@
-# [Project Name](https://github.com/ayohana/ProjectName.git/)
+# [Eau Claire's Hair Salon](https://github.com/ayohana/HairSalon.git/)
 
-#### C# Basic Web Applications Exercise for [Epicodus](https://www.epicodus.com/), 03.20.2020
+#### C# Basic Database Web Application Exercise for [Epicodus](https://www.epicodus.com/), 03.20.2020
 
 #### By [**Adela Darmansyah**](https://ayohana.github.io/portfolio/)
 
