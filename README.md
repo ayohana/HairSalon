@@ -34,7 +34,7 @@
   * Enter `CREATE TABLE clients (ClientID serial PRIMARY KEY, Name VARCHAR(255), StylistID INT);` to create your table of clients.
   * Enter `DESCRIBE stylists;` or `DESCRIBE clients` to see your table columns.
 * Run the application.
-  * Navigate into the `HairSalon` directory.
+  * Navigate into the `HairSalon` directory `$ cd Desktop/HairSalon/HairSalon.Solution/HairSalon`
     * Enter the command `dotnet restore` to gather tools and dependencies for the application.
     * Enter `dotnet run` to run the application.
 
