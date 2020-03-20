@@ -30,17 +30,22 @@ a:hover {
 }
 
 label {
+  display: block;
   margin: 10px;
+  white-space: pre-line;
 }
 
 input {
-  display: inline;
+  margin: 10px;
+  width: 15em;
 }
 
-input::after {
-  content: "\A";
-  white-space: pre;
+input[type=submit] {
+  display: block;
+  margin: 10px;
+  white-space: pre-line;
 }
+
 
 .content {
   background-color: rgba(220, 220, 220, 0.767);
