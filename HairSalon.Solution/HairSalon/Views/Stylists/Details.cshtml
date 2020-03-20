@@ -1,0 +1,22 @@
+@{
+  Layout = "_Layout";
+  ViewBag.Title = "Stylist Details";
+}
+
+@using HairSalon.Models;
+@model HairSalon.Models.Stylist;
+
+<h1>Stylist Details</h1>
+
+@if (Model == null)
+{
+  <p>Sorry, stylist not found.</p>
+}
+else
+{
+  <h2>About @Html.DisplayFor(model => model.Name):</h2>
+  <p>@Html.DisplayNameFor(model => model.Specialty): @Html.DisplayFor(model => model.Specialty)</p>
+  <p>@Html.DisplayName("Hire Date"): @Html.DisplayFor(model => model.HireDate.Month)/@Html.DisplayFor(model => model.HireDate.Day)/@Html.DisplayFor(model => model.HireDate.Year)</p>
+  @* TODO: Add List of Clients here *@
+}
+
