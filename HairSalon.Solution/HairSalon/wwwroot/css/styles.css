@@ -1,0 +1,16 @@
+.content {
+  text-align: center;
+}
+
+label {
+  margin: 10px;
+}
+
+input {
+  display: inline;
+}
+
+input::after {
+  content: "\A";
+  white-space: pre;
+}
