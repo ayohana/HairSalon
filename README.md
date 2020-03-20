@@ -6,34 +6,37 @@
 
 ## Description
 
-**Describe project here**
+**This web application is for Eau Claire's Salon owner.** This application will help Eau Claire manage her employees (stylists) and their clients. Claire will be able to add a list of all her stylists. For each stylist, Claire will also be able to add a list of clients who see that stylist. Each stylist has a specific specialty, so each client can only see a single stylist.
 
 ## User Stories
 
-* As a ..., I want to be able to ... so that ...
-
-## Specs
-
-<details>
-  <summary>Click to expand!</summary>
-
-| Spec | `Console` Input | `Console` Output |
-| :-------------     | :------------- | :------------- |
-| **Test** | input | output |
-
-</details>
+* As the salon owner, I need to be able to see a list of all stylists.
+* As the salon owner, I need to be able to select a stylist, see their details, and see a list of all clients that belong to that stylist.
+* As the salon owner, I need to add new stylists to our system when they are hired.
+* As the salon owner, I need to be able to add new clients to a specific stylist. I should not be able to add a client if no stylists have been added.
 
 ## Setup/Installation Requirements
 
-* Download [.NET Core](https://dotnet.microsoft.com/download/dotnet-core/)
-* Clone this [repository](https://github.com/ayohana/ProjectName.git/)
-* Open the `Command Line Interface`.
-  * Navigate into the `ProjectName` directory.
-    * Type in the command `dotnet restore` to gather tools and dependencies for the application.
-    * Type in the command `dotnet run` to run the application.
-  * Navigate into the `ProjectName.Tests` directory.
-    * Type in the command `dotnet restore` to gather tools and dependencies for the tests.
-    * Type in the command `dotnet test` to run the tests. 
+* Download [.NET Core](https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-c-and-net) (Mac/Windows OS) - _FREE!_
+* Download [MySQL](https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql) (Mac/Windows OS) - _FREE!_
+* Clone this [repository](https://github.com/ayohana/HairSalon.git/)
+  * Open the `Command Line Interface`.
+  * Enter `$ cd Desktop` to navigate into your Desktop (or anywhere you'd like to save this repo into).
+  * Enter `$ git clone https://github.com/ayohana/HairSalon.git/`.
+* Create your database.
+  * Open the `Command Line Interface` (CLI).
+  * Enter `mysql -uroot -p` and the CLI will prompt for your MYSQL password.
+  * Enter `CREATE DATABASE database_name;`
+  * Enter `SHOW DATABASES;` to confirm your database was created in your server's list of databases.
+  * Enter `USE database_name;` to connect to your database.
+  * Enter `SELECT DATABASE();` to verify you are connected to the correct database.
+  * Enter `CREATE TABLE stylists (StylistID serial PRIMARY KEY, Name VARCHAR (255), Specialty VARCHAR (255), HireDate DATETIME);` to create your table of stylists.
+  * Enter `CREATE TABLE clients (ClientID serial PRIMARY KEY, Name VARCHAR(255), StylistID INT);` to create your table of clients.
+  * Enter `DESCRIBE stylists;` or `DESCRIBE clients` to see your table columns.
+* Run the application.
+  * Navigate into the `HairSalon` directory.
+    * Enter the command `dotnet restore` to gather tools and dependencies for the application.
+    * Enter `dotnet run` to run the application.
 
 ## Known Bugs
 
@@ -46,9 +49,9 @@ Feel free to provide feedback via email: adela.yohana@gmail.com.
 ## Technologies Used
 
 * C#
-* [.NET Core](https://dotnet.microsoft.com/download/dotnet-core/)
 * MVC Pattern
-* MySQL
+* [.NET Core](https://dotnet.microsoft.com/download/dotnet-core/) (Windows OS)
+* [MySQL](https://dev.mysql.com/downloads/file/?id=484919) (Windows OS)
 
 ### License
 
