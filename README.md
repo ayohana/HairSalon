@@ -8,6 +8,23 @@
 
 **This web application is for Eau Claire's Salon owner.** This application will help Eau Claire manage her employees (stylists) and their clients. Claire will be able to add a list of all her stylists. For each stylist, Claire will also be able to add a list of clients who see that stylist. Each stylist has a specific specialty, so each client can only see a single stylist.
 
+## Screenshots
+
+#### Application Homepage:
+![Screenshot of homepage](./Screenshots/homepage.JPG/)
+
+#### Adding a Stylist:
+![Screenshot of adding a stylist](./Screenshots/add-stylist.JPG/)
+
+#### Adding a Client for a Stylist:
+![Screenshot of adding a client](./Screenshots/add-client.JPG/)
+
+#### List of all Stylists:
+![Screenshot of all stylists](./Screenshots/all-stylists.JPG/)
+
+#### Details of a Stylist:
+![Screenshot of details of a stylist](./Screenshots/stylist-details.JPG/)
+
 ## User Stories
 
 * As the salon owner, I need to be able to see a list of all stylists.
