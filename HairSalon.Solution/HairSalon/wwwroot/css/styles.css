@@ -29,6 +29,11 @@ a:hover {
   color: black;
 }
 
+ul {
+  list-style-position: inside;
+  margin-bottom: 1.5em;
+}
+
 label {
   display: block;
   margin: 10px;
@@ -58,6 +63,7 @@ input[type=submit] {
   margin-right: auto; 
   margin-top: 10%;
   font-family: 'Special Elite', cursive;
+  font-size: large;
   text-align: center;
   color: black;
 }
