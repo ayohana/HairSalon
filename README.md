@@ -14,7 +14,7 @@
 ![Screenshot of homepage](./Screenshots/homepage.JPG/)
 
 #### Adding a Stylist:
-![Screenshot of adding a stylist](./Screenshots/add-stylist.JPG/)
+![Screenshot of adding a stylist](./Screenshots/add-stylist.jpg/)
 
 #### Adding a Client for a Stylist:
 ![Screenshot of adding a client](./Screenshots/add-client.JPG/)
